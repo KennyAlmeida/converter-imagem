@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Conversor de Imagens</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Conversor de Imagens</h1>
+    <div class="container">
+        <form id="image-form">
+            <label for="image-file">Selecione uma imagem:</label>
+            <input type="file" id="image-file" accept=".jpg, .jpeg, .png">
+            <br>
+            <label for="image-type">Selecione para qual formato quer converter:</label>
+            <select id="image-format">
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="jpg">JPG</option>
+                <option value="webp">WEBP</option>
+            </select>
+            <br><br>
+            <button type="submit">Converter</button>
+        </form>
+        <div id="result-container"></div>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
